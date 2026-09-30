@@ -21,7 +21,7 @@ Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " --- NERDTree ---
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 
 autocmd BufWritePost *.py execute "silent !black " . shellescape(expand("%")) | silent! checktime | redraw!
 " augroup python_autoformat
